@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: beige;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    width: 1000px;
+}
+
+.description {
+    text-align: justify;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.info {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.rede-social {
+    font-size: 30px;
+}
+
