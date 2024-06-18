@@ -1,67 +1,179 @@
+:root {
+    --main-background-color : #fdfad7;
+}
+
+
+
+
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    justify-content: space-between;
+}
+
+a{
+    color: rgb(113, 113, 113);
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px 25px;
-    background-color: beige;
+    padding: 15px 50px 15px 25px;
+    background-color: var(--main-background-color);
     align-items: center;
+    gap: 15px;
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img{
+    width: 70px;
+    border-radius: 50%;
 }
 
 .links {
     display: flex;
-    gap: 25px;
+    gap: 50px;
+
 }
+
+.links a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 50px;
     align-items: center;
+    justify-content: center;
+    background-image: url("../img/background4.png");
+    background-size: cover;
+    background-repeat: repeat;
+    height: 90vh;
 }
+
 
 article{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 90px;
+    gap: 100px;
     align-items: center;
-    width: 1000px;
 }
 
 .description {
+    width: 520px;
+    min-width: 380px;
+    max-width: 30vw;
+    height: 280px;
+    text-align: left;
+    color: var(--main-background-color);
+    font-size: 24px;
+    background-color: rgba(86, 86, 86, 0.325);
+    border-radius: 20px;
+    padding: 10px;
+    overflow: auto;
+    flex: 1;
+}
+
+
+.info-text {
     text-align: justify;
+    font-weight: 500;
+}
+
+main iframe {
+    border-radius: 20px;
+    flex: 1;
+    max-width: 40vw;
 }
 
 
 footer {
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
 }
 
-
-.info {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.informacoes{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .socials {
     display: flex;
     gap: 20px;
+    padding: 15px;
+    justify-content: center;
+    background-color: var(--main-background-color);
+
 }
 
 .rede-social {
-    font-size: 30px;
+    font-size: 25px;
 }
 
+
+.informacoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    color: rgb(109, 109, 109);
+    font-weight: 500;
+    background-color: #c1ccc2;
+}
+
+
+@media (max-width: 750px) {
+
+    body {
+        height: 100%;
+    }
+
+    header {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+
+    article {
+        gap: 40px;
+    }
+
+    .description {
+        max-width: 75vw;
+        font-size: 17px;
+        min-width: 250px;
+        height: 100%;
+    }
+    
+    main iframe {
+        max-width: 80vw;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    main {
+        height: 100%;
+    }
+
+    .description {
+        font-size: 18px;
+        height: 100%;
+    }
+
+    article {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+}
